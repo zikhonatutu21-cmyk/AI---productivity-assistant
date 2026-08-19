@@ -52,11 +52,11 @@ function EmailPage() {
         ]}
         buildPrompt={(v) =>
           [
-            `Recipient: ${v.recipient}`,
-            `Purpose: ${v.purpose}`,
-            `Tone: ${v.tone || "Friendly professional"}`,
-            `Length: ${v.length || "Medium"}`,
-            `Key points: ${v.points || "None provided"}`,
+            `Recipient: ${v["recipient"]}`,
+            `Purpose: ${v["purpose"]}`,
+            `Tone: ${v["tone"] || "Friendly professional"}`,
+            `Length: ${v["length"] || "Medium"}`,
+            `Key points: ${v["points"] || "None provided"}`,
             "Write the email now.",
           ].join("\n")
         }
