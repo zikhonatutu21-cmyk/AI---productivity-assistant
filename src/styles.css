@@ -147,3 +147,20 @@
     color: var(--color-foreground);
   }
 }
+
+@theme inline {
+  --color-primary-glow: var(--primary-glow);
+  --shadow-card: var(--shadow-card);
+}
+
+@utility bg-gradient-primary {
+  background-image: var(--gradient-primary);
+}
+
+@utility bg-gradient-surface {
+  background-image: var(--gradient-surface);
+}
+
+@utility shadow-card {
+  box-shadow: var(--shadow-card);
+}
